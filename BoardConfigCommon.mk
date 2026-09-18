@@ -9,6 +9,9 @@ include vendor/xiaomi/sm8450-common/BoardConfigVendor.mk
 
 COMMON_PATH := device/xiaomi/sm8450-common
 
+# Make source RW TMP FIX
+BUILD_BROKEN_SRC_DIR_IS_WRITABLE := true
+
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
